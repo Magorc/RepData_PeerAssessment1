@@ -37,7 +37,7 @@ dateSum <- aggregate(steps ~ date, FUN=sum, data=activity, na.action = "na.omit"
 ###Make a histogram of the total number of steps taken each day###
 
 I used ggplot to do a basic histogram with some fancy colors. I included two dashed lines placed on the median and the mean of the histgram
-```{r}
+```{r histogram}
 ggplot(data=dateSum, aes(dateSum$steps)) + 
   geom_histogram( binwidth = 1000,
                  col="black", 

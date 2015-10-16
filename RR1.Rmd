@@ -6,7 +6,7 @@ output:
 #Reproducible Research - Assignment 1#
 ##Packages and Data##
 ```{r setoptions, echo=FALSE} 
-library(plyr)
+library(plyr) 
 library(dplyr)
 library(ggplot2)
 library(knitr)

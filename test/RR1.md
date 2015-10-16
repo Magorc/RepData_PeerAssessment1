@@ -50,7 +50,7 @@ ggplot(data=dateSum, aes(dateSum$steps)) +
     geom_vline(aes(xintercept=median(steps)), color = "green", linetype="dashed", size = .5)
 ```
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png) 
+![plot of chunk histogram](figure/histogram-1.png) 
 
 ###Calculate and report the mean and median of the total number of steps taken per day###
 
@@ -104,7 +104,7 @@ ggplot(data=linedata, aes(x=interval, y=intavg, group=date)) +
   geom_line(color="black") 
 ```
 
-![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6-1.png) 
+![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5-1.png) 
   
 ###Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?###
 
@@ -186,7 +186,7 @@ ggplot(data=corrDateSum, aes(corrDateSum$steps)) +
     geom_vline(aes(xintercept=median(steps)), color="green", linetype="dashed", size = .5)
 ```
 
-![plot of chunk unnamed-chunk-11](figure/unnamed-chunk-11-1.png) 
+![plot of chunk unnamed-chunk-10](figure/unnamed-chunk-10-1.png) 
 
 ###Calculate and report the mean and median total number of steps taken per day###
 
@@ -244,7 +244,7 @@ ggplot(data=stepsByDay, aes(x=interval, y=steps, group=daylevel)) +
   ggtitle("Average Number of Steps per Interval, separated by Weekdays or Weekends")
 ```
 
-![plot of chunk unnamed-chunk-14](figure/unnamed-chunk-14-1.png) 
+![plot of chunk unnamed-chunk-13](figure/unnamed-chunk-13-1.png) 
 
 ##Conclusions##
 We can see from the plots that step activity does change from weekday to weekend.  Weekend activity seems to be more consistent throughout the day with medium peaks at many intervals, where weekday activity seems limited to one major peak near the beginning of each day with a minor peak in the evening.
